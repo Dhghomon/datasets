@@ -10,7 +10,7 @@
 -- Welcome to SurrealDB, a multi-model database combining document, graph,
 -- relational, time-series and vector capabilities in one system, all powered
 -- by SurrealQL. Use it to build AI agents, real-time and event-driven systems,
--- knowledge graphs, as a backend, a BaaS, or embed it directly into your apps
+-- knowledge graphs, as a backend, a BaaS, or embed it directly into your apps.
 -- One engine, every model.
 --
 -- Learn more at https://surrealdb.com/docs/surrealdb/introduction/start
@@ -42,7 +42,7 @@ SELECT id, name, team.name FROM user;
 SELECT id, name, team.* FROM user;
 
 -- ------------------------------------------------------------
--- Relations through graph edges (can containe metadata)
+-- Relations through graph edges (can contain metadata)
 RELATE user:martin->plays_for->team:green SET since = d'2025-10-23';
 RELATE user:ignacio->plays_for->team:green;
 RELATE user:tobie->plays_for->team:red;
